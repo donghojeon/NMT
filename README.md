@@ -27,3 +27,5 @@ self.rl_n_epochs    = 20  #15  # Number of epochs for reinforcement
 
 
 테스트는 translate_customize.ipynb로 한다. 결과를 txt로 출력하는 부분도 추가했다
+
+![1](https://user-images.githubusercontent.com/38748880/51825385-03bea300-2328-11e9-853d-dcdb01459e37.png)
