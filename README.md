@@ -3,6 +3,8 @@ Neural Machine Translation
 
 190128, 이대 영한 번역 자문
 
+![2](https://user-images.githubusercontent.com/38748880/51825474-2f418d80-2328-11e9-8c17-c6fe8dc60ded.png)
+
 김기헌의 https://github.com/kh-kim/simple-nmt
 
 코드를 customize 시킨 코드.
