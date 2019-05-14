@@ -1,4 +1,4 @@
-# NMT
+## NMT
 Neural Machine Translation
 
 190128, 이대 영한 번역 자문
@@ -12,7 +12,7 @@ Neural Machine Translation
 기존의 python ~ 식으로 돌리는 코드를 jupyter notebook 으로 돌려서 그래프를 찍을 수 있게 함
 
 
-1. 데이터 split
+# 1. 데이터 split
 
 데이터는 data 파일에, [corpus.en, corpus.ko] 식으로 병렬 코퍼스 상을 넛고
 python data/build_corpus 를 이용하여 훈련, 검증 셋을 만든다
@@ -38,7 +38,7 @@ write 376423 lines to ./data/corpus.train.en
 write 376423 lines to ./data/corpus.train.ko
 ```
 
-
+# 2. Train
 
 커스터마이즈 한 코드는, train -> train_custom, translate -> translate_customize, 
 simple_nmt/rl_trainer->simple_nmt/rl_trainer_custom, simple_nmt/_custom -> simple_nmt/trainer_custom
@@ -49,7 +49,7 @@ simple_nmt/rl_trainer->simple_nmt/rl_trainer_custom, simple_nmt/_custom -> simpl
 self.n_epochs       = 40  #22  # Number of epochs
 self.rl_n_epochs    = 20  #15  # Number of epochs for reinforcement
 
-
+# 3. Test
 테스트는 translate_customize.ipynb로 한다. 결과를 txt로 출력하는 부분도 추가했다
 
 ![1](https://user-images.githubusercontent.com/38748880/51825385-03bea300-2328-11e9-853d-dcdb01459e37.png)
