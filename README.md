@@ -39,6 +39,9 @@ write 376423 lines to ./data/corpus.train.ko
 ```
 
 # 2. Train
+```
+train_custom.ipynb
+```
 
 커스터마이즈 한 코드는, train -> train_custom, translate -> translate_customize, 
 simple_nmt/rl_trainer->simple_nmt/rl_trainer_custom, simple_nmt/_custom -> simple_nmt/trainer_custom
@@ -50,6 +53,9 @@ self.n_epochs       = 40  #22  # Number of epochs
 self.rl_n_epochs    = 20  #15  # Number of epochs for reinforcement
 
 # 3. Test
+```
+translate_customize.ipynb
+```
 테스트는 translate_customize.ipynb로 한다. 결과를 txt로 출력하는 부분도 추가했다
 
 ![1](https://user-images.githubusercontent.com/38748880/51825385-03bea300-2328-11e9-853d-dcdb01459e37.png)
