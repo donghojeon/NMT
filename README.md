@@ -11,11 +11,33 @@ Neural Machine Translation
 
 기존의 python ~ 식으로 돌리는 코드를 jupyter notebook 으로 돌려서 그래프를 찍을 수 있게 함
 
+
+1. 데이터 split
+
 데이터는 data 파일에, [corpus.en, corpus.ko] 식으로 병렬 코퍼스 상을 넛고
-
 python data/build_corpus 를 이용하여 훈련, 검증 셋을 만든다
-
 ex) [corpus.en, corpus.ko] -> [corpus.train.en, corpus.train.ko, corpus.valid.en, corpus.valid.en]
+
+Split corpus to train-set and valid-set
+```
+$ python ./data/build_corpus.py -h
+```
+usage: build_corpus.py [-h] --input INPUT --lang LANG --output OUTPUT
+                       [--valid_ratio VALID_RATIO] [--test_ratio TEST_RATIO]
+                       [--no_shuffle]
+example usage:
+```
+$ ls ./data
+corpus.en  corpus.ko
+$ python ./data/build_corpus.py --input ./data/corpus --lang enko --output ./data/corpus
+total src lines: 384105
+total tgt lines: 384105
+write 7682 lines to ./data/corpus.valid.en
+write 7682 lines to ./data/corpus.valid.ko
+write 376423 lines to ./data/corpus.train.en
+write 376423 lines to ./data/corpus.train.ko
+```
+
 
 
 커스터마이즈 한 코드는, train -> train_custom, translate -> translate_customize, 
